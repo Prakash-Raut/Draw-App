@@ -1,15 +1,22 @@
 {
-  "name": "http",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@repo/typescript-config": "workspace:*"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+	"name": "http",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node ./dist/index.js",
+		"dev": "pnpm run build && pnpm run start",
+		"clean": "rm -rf dist"
+	},
+	"dependencies": {
+		"@repo/typescript-config": "workspace:*",
+		"express": "^4.21.2"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/express": "^5.0.0"
+	}
 }
