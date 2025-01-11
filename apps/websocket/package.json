@@ -9,14 +9,14 @@
 		"clean": "rm -rf dist"
 	},
 	"dependencies": {
-		"@repo/typescript-config": "workspace:*",
 		"ws": "^8.18.0"
+	},
+	"devDependencies": {
+		"@repo/typescript-config": "workspace:*",
+		"@types/ws": "^8.5.13"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"description": "",
-	"devDependencies": {
-		"@types/ws": "^8.5.13"
-	}
+	"description": ""
 }
